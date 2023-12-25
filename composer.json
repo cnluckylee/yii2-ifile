@@ -1,0 +1,38 @@
+{
+    "name": "mingyuanyun/yii2-ifile",
+    "description": "该组件提供统一的文件存储客户端编程模型，支持简单上传、分片上传、下载、文件内容查看等。目前已支持MinIO，阿里OSS，招商COS。",
+    "keywords": ["yii2", "file", "storage", "upload", "oss", "minio", "obs"],
+    "require": {
+        "php": ">=5.5",
+        "aliyuncs/oss-sdk-php": "^2.0",
+        "aws/aws-sdk-php": "^3.0",
+        "alibabacloud/sts": "^1.8",
+        "guzzlehttp/guzzle": "^6.5.0",
+        "huaweicloud/esdk-obs-php": "^3.23.11"
+    },
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "chenxy",
+            "email": "chenxy@mingyuanyun.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "iFile\\": "src/"
+        }
+    },
+    "repositories":[
+        {
+            "type": "vcs",
+            "url":  "git@opengit.mysre.cn:itools/yii2-ifile.git"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
